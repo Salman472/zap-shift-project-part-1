@@ -1,10 +1,11 @@
 import React, { use } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import Arrow from '../../../components/buttons/Arrow';
 
 const FAQCard = ({faqsPromise}) => {
     const faqs=use(faqsPromise)
     return (
-        <div className='space-y-4'>
+        <div className='space-y-8'>
             <div className='border space-y-4 p-5 rounded-2xl bg-[#E6F2F3]'>
             <div className='flex justify-between items-center border-b border-gray-400 pb-4'>
                 <h1 className='text-xl font-semibold '>How does this posture corrector work?</h1>
@@ -21,6 +22,10 @@ const FAQCard = ({faqsPromise}) => {
                 </div>
                 </>)
             }
+        </div>
+        <div className='flex justify-center items-center gap-2'>
+            <button className='btnsBg'>See More FAQ’s</button>
+            <Arrow/>
         </div>
         </div>
     );
