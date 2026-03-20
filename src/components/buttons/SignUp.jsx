@@ -2,7 +2,7 @@ import React from 'react';
 
 const SignUp = () => {
     return (
-        <div className='btnsBg'>
+        <div className='btnsBg hidden sm:flex'>
             signup
         </div>
     );
