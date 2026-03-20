@@ -31,5 +31,5 @@ body{
 /* button style */
 
 .btns{
-  @apply border py-2 px-4 text-xl font-bold
+  @apply border  border-none border-gray-300 cursor-pointer  py-2 px-4 text-xl font-bold 
 }
