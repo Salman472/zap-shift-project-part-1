@@ -4,8 +4,9 @@ import servicePng from "../../../assets/service.png";
 const Services = () => {
   return (
     <div className="border py-20 bg-secondary rounded-xl">
-      <div className="text-center text-white max-w-6/12 mx-auto space-y-4 mb-8">
-        <h1 className="px-4 sm:px-6 md:px-8 lg:px-16 text-2xl font-bold">
+      <div className="text-center text-white max-w-11/12 md:max-w-6/12 mx-auto space-y-4 mb-8">
+        <h1 className="px-4 sm:px-6 md:px-8 lg:px-16 text
+        ">
         Our Services
       </h1>
       <p>

@@ -11,7 +11,7 @@ import Marquee from 'react-fast-marquee';
 const Companies = () => {
     return (
        <div>
-        <h1 className='text-center mb-8 text-2xl font-bold'>We've helped thousands of sales teams</h1>
+        <h1 className='text text-center'>We've helped thousands of sales teams</h1>
         <Marquee play={true} autoFill={true} pauseOnClick={true}>
          <div className='flex gap-20 '>
            <img className='ml-20 cursor-pointer' src={amazon} alt="amazon logo" />
