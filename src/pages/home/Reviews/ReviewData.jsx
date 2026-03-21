@@ -17,38 +17,37 @@ const ReviewData = ({ reviewsPromise }) => {
   return (
     <>
       <Swiper
-      loop={true}
+        loop={true}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-      slidesPerView={1}
-         breakpoints={{
-    640: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2, 
-    },
-    1024: {
-      slidesPerView: 3, 
-    },
-  }}
+        slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
         coverflowEffect={{
           rotate: 30,
           stretch: "50%",
-          depth: 300,
+          depth: 100,
           modifier: 1,
-          scale: 0.50,
+          scale: 0.75,
           slideShadows: true,
         }}
-    
-  autoplay={{
-    delay: 2000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true, 
-  }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination,Autoplay]}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
       >
         {reviews.map((review) => (

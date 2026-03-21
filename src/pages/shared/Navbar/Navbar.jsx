@@ -1,18 +1,18 @@
 import React from "react";
 import Logo from "../../../components/Logo/Logo";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import SignIn from "../../../components/buttons/SignIn";
 import SignUp from "../../../components/buttons/SignUp";
 import Arrow from "../../../components/buttons/Arrow";
 
 const Navbar = () => {
-  const links=<>
-  <Link to={'/services'}>Services</Link>
-  <Link to={'/coverage'}>Coverage</Link>
-  <Link to={'/about-us'}>About Us</Link>
-  <Link to={'/pricing'}>Pricing</Link>
-  <Link to={'/blog'}>Blog</Link>
-  <Link to={'/contact'}>Contact</Link>
+  const NavLinks=<>
+  <li><NavLink to={'/services'}>Services</NavLink></li>
+  <li><NavLink to={'/coverage'}>Coverage</NavLink></li>
+  <li><NavLink to={'/about-us'}>About Us</NavLink></li>
+  <li><NavLink to={'/pricing'}>Pricing</NavLink></li>
+  <li><NavLink to={'/blog'}>Blog</NavLink></li>
+  <li><NavLink to={'/contact'}>Contact</NavLink></li>
   </>
   return (
     <div className="bg-base-100 shadow-sm">
@@ -38,16 +38,16 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow "
           >
-            {links}
+            {NavLinks}
           </ul>
         </div>
         <Logo/>
       </div>
       <div className="navbar-center hidden lg:flex ">
         <ul className="menu menu-horizontal px-1 gap-3">
-         {links}
+         {NavLinks}
         </ul>
       </div>
       <div className="navbar-end gap-3">
