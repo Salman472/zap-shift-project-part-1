@@ -7,6 +7,7 @@ import Mission from "../pages/aboutUs/AboutUs/Mission";
 import Success from "../pages/aboutUs/AboutUs/Success";
 import Team from "../pages/aboutUs/AboutUs/Team";
 import AboutLayout from "../layout/AboutLayout";
+import PageNotFound from "../components/error/PageNotFound";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ export const router = createBrowserRouter([
           children:[
             {
               index:true,
+              
+              Component:Story
+            },
+            {
+              
               path:'/about-us/story',
               Component:Story
             },
@@ -44,7 +50,12 @@ export const router = createBrowserRouter([
               Component:Team
             },
           ]
+        },
+        {
+          path:'/*',
+          Component:PageNotFound
         }
+
     ]
   },
 ]);
